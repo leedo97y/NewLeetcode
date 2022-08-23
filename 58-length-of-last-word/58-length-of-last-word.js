@@ -3,8 +3,7 @@
  * @return {number}
  */
 var lengthOfLastWord = function(s) {
-    s = s.trimEnd();
-    const str = s.split(" ");
+    const str = (s.trimEnd()).split(" ");
     console.log(str);
     const idx = (str[str.length - 1]).length;
     
