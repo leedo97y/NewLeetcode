@@ -12,8 +12,6 @@ var maxProfit = function(prices) {
         profit = Math.max(profit, prices[i] - min);
     }
     
-    
-    
     if (prices.length <= 1 || prices == null) {
         profit = 0;
     }
