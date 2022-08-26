@@ -3,6 +3,6 @@
  * @return {string}
  */
 var toLowerCase = function(s) {
-    let str = s.toLowerCase();
-    return str;
+    
+    return s.toLowerCase();
 };
