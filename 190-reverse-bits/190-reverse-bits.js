@@ -5,19 +5,8 @@
 var reverseBits = function(n) {
     n = n.toString(2);
     
-    let add = 32 - n.length;
+    let reverse = n.split("").reverse().join("");
+    let answer = reverse.padEnd(32, "0");
     
-    if (n.length !== 32) {
-        for (let i = 1; i <= add; i++) {
-            n = "0" + n;
-        }
-    }
-    
-    let reverse = "";
-    
-    for (let i = n.length - 1; i >=0; i--) {
-        reverse += n[i]; 
-    }
-    
-    return parseInt(reverse, 2)
+    return parseInt(answer, 2);
 };
